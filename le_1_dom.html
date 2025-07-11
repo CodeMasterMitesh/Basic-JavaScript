@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Method In Js</title>
+</head>
+<body>
+    
+    <div id="heading">
+
+    </div>
+    <div id="main">
+
+    </div>
+ 
+ <script>
+    // 
+    let data = document.getElementById("heading");
+    console.dir(data);
+    console.log(data);
+    // data.innerHTML = "<p>Welcome To Patel Web Solution</p>";
+    data.innerText = "Welcome Students";
+    data.style = "background-color : green";
+
+    document.getElementById("main").innerHTML = "<a href='https://codemastermitesh.com'>CodeMasterMitesh</a>";
+
+ </script>   
+</body>
+</html>
