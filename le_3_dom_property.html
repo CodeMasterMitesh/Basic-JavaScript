@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript DOM Properties</title>
+    <style>
+        .newBox{
+            visibility: hidden;
+        }
+        .box1{
+            width: 200px;
+            height: 200px;
+            border:2px solid black;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+<h1 title="JavaScript">Javascript DOM Properties</h1>
+<div class="box">
+    This is Box
+    <div class="newBox">
+        This is New Box
+    </div>
+</div>
+
+
+
+
+<script>
+    // get / set 
+    // let tagName = document.querySelector("h1").tagName;
+    // console.log(tagName);
+
+    // let h = document.querySelector("h1").innerHTML = "<span>Hello Students</span>";
+    // console.log(h);
+
+    // let box = document.querySelector(".box");
+    // // console.log(box);
+    // box.innerText = "This is New Box";
+    // console.log(box);
+        let v = document.querySelector("h1").getAttribute("title");
+    // console.dir(v);
+    // let text = box.textContent;
+    // console.log(box);
+
+
+    // get / set 
+    // getAttribute 
+    // setAttribute 
+
+    // console.dir(v);
+    // console.log();
+    document.querySelector("h1").setAttribute("title","Javascript DOM Properties");
+    document.querySelector("div").setAttribute("class","box1");
+
+</script>
+</body>
+</html>
