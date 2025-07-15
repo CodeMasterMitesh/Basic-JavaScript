@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set and Get Properties/Methods IN JS</title>
+</head>
+<body>
+
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate eius dicta aliquid dolore laboriosam suscipit veniam doloribus unde quia accusamus, fugiat repellendus. Soluta tenetur tempora dicta neque excepturi? Temporibus, facilis!</p>
+    </div>
+<script>
+    let e = document.querySelector("div"); // get div node
+    // console.log(e);
+    e.innerHTML = "<h1>Good Morning</h1>";  // set h1 node inside div tag
+    // e.style.backgroundColor = "blue";
+    // e.style.color = "white";
+    // e.style.textAlign = "center";
+    e.style.cssText = "border:2px solid black;width:300px;height:300px;background-color:yellow;";
+
+// createElement : create new elemet using this method
+// append : append means inside tag but before end of tag
+// prepend : prepend means inside tag but start of tag
+// before :before means before tag/element (outside)
+// after : after means after tag/element (outside)
+let newEle = document.createElement("a");
+let b = document.querySelector("body");
+newEle.innerText = "Click";
+newEle.style.cssText = "display:inline-block;border:2px solid black;width:100px;padding:5px;background-color:green;color:white;text-align:center";
+console.log(newEle);
+
+// e.append(newEle);
+e.after(newEle);
+// e.before(newEle);
+// e.after(newEle);
+
+newEle.remove();
+</script>
+</body>
+</html>
