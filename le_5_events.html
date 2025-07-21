@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Eevents Property</title>
+    <style>
+        .box{
+            border: 2px solid black;
+            width: 200px;
+            height: 200px;
+            background-color: blueviolet;
+        }
+        .box1{
+            /* border: 2px solid rgb(204, 49, 49);
+            width: 100px;
+            height: 100px; */
+            background-color: rgb(198, 226, 43);
+        }
+        #bax{
+            border: 2px solid black;
+            width: 200px;
+            height: 200px;
+            background-color: rgb(57, 6, 40);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+<!-- What is an event?
+Events are things that happen in the system you are programming — the system produces (or "fires") a signal of some kind when an event occurs, and provides a mechanism by which an action can be automatically taken (that is, some code running) when the event occurs. Events are fired inside the browser window, and tend to be attached to a specific item that resides in it. This might be a single element, a set of elements, the HTML document loaded in the current tab, or the entire browser window. There are many different types of events that can occur.
+
+For example:
+
+The user selects, clicks, or hovers the cursor over a certain element.
+The user presses a key on the keyboard.
+The user resizes or closes the browser window.
+A web page finishes loading.
+A form is submitted.
+A video is played, paused, or ends.
+An error occurs.
+You can gather from this (and from glancing at the MDN event reference) that there are a lot of events that can be fired.
+
+To react to an event, you attach an event listener to it. This is a code feature that listens out for the event firing. When the event fires, an event handler function (referenced by, or contained inside the event listener) is called to respond to the event firing. When such a block of code is set up to run in response to an event, we say we are registering an event handler. -->
+ 
+    <div ondblclick="document.querySelector('div').classList.add('box');">
+        This is Box
+    </div>
+     <div id="bax" onmouseover="document.getElementById('bax').style.backgroundColor = 'orange';">
+        This is Box1
+    </div>
+    <button onclick="document.querySelector('div').classList.add('box1');">Click Me</button>
+<script>
+//    onclick 
+//    ondblclick
+//    mouseover 
+//    keyup
+//    keydown 
+//    submit
+</script>
+</body>
+</html>

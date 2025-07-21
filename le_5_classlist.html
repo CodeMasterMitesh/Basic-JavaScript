@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Class List Property</title>
+    <style>
+        .box{
+            border: 2px solid black;
+            width: 200px;
+            height: 200px;
+            background-color: blueviolet;
+        }
+        .box1{
+            /* border: 2px solid rgb(204, 49, 49);
+            width: 100px;
+            height: 100px; */
+            background-color: rgb(198, 226, 43);
+        }
+    </style>
+</head>
+<body>
+ 
+    <div class="">
+        This is Box
+    </div>
+<script>
+    let div = document.querySelector("div");
+    console.log(div);
+    div.classList.add("box");
+    div.classList.add("box1");
+    div.classList.remove("box1");
+</script>
+</body>
+</html>
