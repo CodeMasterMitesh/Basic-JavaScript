@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Eevents Property</title>
+    <style>
+        .box{
+            border: 2px solid black;
+            width: 200px;
+            height: 200px;
+            background-color: blueviolet;
+        }
+        .box1{
+            /* border: 2px solid rgb(204, 49, 49);
+            width: 100px;
+            height: 100px; */
+            background-color: rgb(198, 226, 43);
+        }
+        #bax{
+            border: 2px solid black;
+            width: 200px;
+            height: 200px;
+            background-color: rgb(57, 6, 40);
+            color: white;
+        }
+        .black{
+            background-color: black;
+        }
+        .white{
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Events In Js</h1>
+
+    <div>
+        This is Box
+    </div>
+
+     <div id="bax">
+        This is Box1
+    </div>
+
+    <!-- <button onclick="myFun();">Click Me</button> -->
+    <!-- <button onclick="myFun1();">Remove Class</button> -->
+    <button onclick="bgChange();">Black Mode</button>
+
+<script>
+
+    // function myFun()
+    // {
+    //     let div = document.querySelector("div");
+    //     div.classList.add("box");
+    // }
+
+    // function myFun1()
+    // {
+    //     let div = document.querySelector("div");
+    //     div.classList.remove("box");
+    // }
+    // myFun();
+
+    // arrow function
+//    let arrow = ()=>{
+//         // console.log("Hello");
+//         return "Hello Good Morning";
+//     }
+
+// console.log(arrow());
+//    let msg = (m)=>console.log(m);
+//    msg("Good Morning Students");
+
+let mode = true;
+function bgChange(){
+    let bg = document.querySelector("body");
+    let btn = document.querySelector("button");
+    if(mode){
+        bg.classList.add("black");
+        bg.classList.remove("white");
+        btn.innerText = "White Mode";
+        mode = false;
+    }else{
+        bg.classList.add("white");
+        bg.classList.remove("black");
+        btn.innerText = "Black Mode";
+        mode = true;
+    }
+}
+
+</script>
+</body>
+</html>
