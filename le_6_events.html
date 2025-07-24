@@ -46,7 +46,8 @@
 
     <!-- <button onclick="myFun();">Click Me</button> -->
     <!-- <button onclick="myFun1();">Remove Class</button> -->
-    <button onclick="bgChange();">Black Mode</button>
+    <!-- <button onclick="bgChange();">Black Mode</button> -->
+    <button onclick="console.log('hello');">Black Mode</button>
 
 <script>
 
@@ -73,23 +74,24 @@
 //    let msg = (m)=>console.log(m);
 //    msg("Good Morning Students");
 
-let mode = true;
-function bgChange(){
-    let bg = document.querySelector("body");
-    let btn = document.querySelector("button");
-    if(mode){
-        bg.classList.add("black");
-        bg.classList.remove("white");
-        btn.innerText = "White Mode";
-        mode = false;
-    }else{
-        bg.classList.add("white");
-        bg.classList.remove("black");
-        btn.innerText = "Black Mode";
-        mode = true;
-    }
-}
+// let mode = true;
+// function bgChange(){
+//     let bg = document.querySelector("body");
+//     let btn = document.querySelector("button");
+//     if(mode){
+//         bg.classList.add("black");
+//         bg.classList.remove("white");
+//         btn.innerText = "White Mode";
+//         mode = false;
+//     }else{
+//         bg.classList.add("white");
+//         bg.classList.remove("black");
+//         btn.innerText = "Black Mode";
+//         mode = true;
+//     }
+// }
 
 </script>
+<script src="app.js"></script>
 </body>
 </html>
