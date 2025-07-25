@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Eevents Property</title>
+    
+</head>
+<body>
+
+<form action="">
+    <label for="">Enter Key Word</label> :
+    <input type="text" name="keyword" value="">
+    <input id="key_2" type="text" name="keyup" value="">
+</form>
+<div id="words"></div>
+<!-- 
+onkeyup 
+onkeydown
+onchange 
+onfocus
+onblur
+onsubmit
+-->
+<script>
+
+    // let input = document.querySelector("input").value; // read value / getValue of input
+    // console.dir(input);
+    
+    // input = document.querySelector("input").value = "Js Is Cool"; // valueSet in input
+    // console.dir(input);
+
+    let input = document.querySelector("input");
+    let words = document.querySelector("#words");
+    let key_2 = document.querySelector("#key_2");
+    input.addEventListener("keydown",(e)=>{
+        // console.log(input.value);
+        words.innerText = input.value;
+    });
+
+    key_2.addEventListener("keyup",(e)=>{
+        // console.log(input.value);
+        words.innerText = key_2.value;
+    });
+
+    key_2.addEventListener("focus",(e)=>{
+        console.log("Hello");
+    });
+
+    key_2.addEventListener("blur",(e)=>{
+        console.log("Hello Remove");
+    });
+</script>
+</body>
+</html>
