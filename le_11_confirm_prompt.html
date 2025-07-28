@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirm and Prompt Method In Js</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 100%;
+            height: 100vh;
+            background-color: rgba(0, 0, 0, 0.712);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all 2s ease;
+            visibility:hidden;
+        }
+        .box{
+            width: 300px;
+            height: 200px;
+            background-color: white;
+            border-radius: 12px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all 2s ease;
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- <div id="data"><span>Msg : </span></div> -->
+    <!-- <div id="username"><span>Your User Name is : </span></div> -->
+    <!-- <h1>Confirm and Prompt</h1> -->
+    <button id="btn">Make Payment</button>
+    <div class="container">
+        <div class="box">
+            <span>✅ Your Payment Successfully!</span>
+        </div>
+    </div>
+    
+ <script>
+
+    // let num = prompt("Enter Any Value :");
+    // console.log(num);
+    // // document.querySelector("#data").innerText = num;
+
+    // if(num == null){
+    //     document.querySelector("#data").append("Enter Valid Value");
+    // }else{
+    //     document.querySelector("#data").append(num * num);
+    // }
+
+
+    // let name = prompt("Enter Your Name :");
+    // console.log(name);
+
+    // if(name == null){
+    //     document.querySelector("#username").append("Enter Valid Value");
+    // }else{
+    //     document.querySelector("#username").append("@"+ name + name.length);
+    // }
+
+    let container = document.querySelector(".container");
+    let btn = document.querySelector("#btn");
+    btn.addEventListener("click",(e)=>{
+
+        let con = confirm("Are You Sure You want To Make This Payment ?");
+        // console.log(con);
+        if(con){
+            container.style.visibility = "visible";
+        }else{
+            container.style.visibility = "hidden";
+        }
+
+    });
+
+
+ </script>   
+</body>
+</html>
